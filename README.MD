@@ -66,8 +66,8 @@
 ### Шаг 2: Клонирование репозитория
 
 ```bash
-git clone <URL вашего репозитория>
-cd <папка репозитория>
+git clone https://github.com/bende-r/XMLProcessor.git
+cd XMLProcessor
 ```
 
 ---
