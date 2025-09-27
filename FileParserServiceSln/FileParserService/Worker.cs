@@ -8,6 +8,8 @@ namespace FileParserService
         private readonly IServiceScopeFactory _scopeFactory;
         private readonly string _watchPath;
         private readonly string _fileFilter;
+        private readonly string _processingMode;
+        private readonly Dictionary<string, DateTime> _processedFiles = new();
 
         public Worker(ILogger<Worker> logger, IServiceScopeFactory scopeFactory, IConfiguration configuration)
         {
@@ -15,6 +17,9 @@ namespace FileParserService
             _scopeFactory = scopeFactory;
             _watchPath = configuration["FileWatcher:Path"]!;
             _fileFilter = configuration["FileWatcher:Filter"]!;
+
+            _processingMode = configuration["FileWatcher:ProcessingMode"] ?? "DeleteAfterProcessing";
+            _logger.LogInformation("File processing mode is set to: {ProcessingMode}", _processingMode);
 
             if (!Directory.Exists(_watchPath))
             {
@@ -31,19 +36,43 @@ namespace FileParserService
             {
                 try
                 {
-                    var files = Directory.GetFiles(_watchPath, _fileFilter);
-                    if (files.Any())
-                    {
-                        _logger.LogInformation("Found {Count} file(s) to process.", files.Length);
+                    List<string> filesToProcess = new List<string>();
 
-                        foreach (var file in files)
+                    if (_processingMode == "TrackLastModified")
+                    {
+                        var currentFiles = Directory.GetFiles(_watchPath, _fileFilter);
+                        foreach (var file in currentFiles)
                         {
+                            var lastWriteTime = File.GetLastWriteTimeUtc(file);
+
+                            if (!_processedFiles.TryGetValue(file, out var processedTime) || lastWriteTime > processedTime)
+                            {
+                                filesToProcess.Add(file);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        filesToProcess = Directory.GetFiles(_watchPath, _fileFilter).ToList();
+                    }
+
+                    if (filesToProcess.Any())
+                    {
+                        _logger.LogInformation("Found {Count} file(s) to process in '{ProcessingMode}' mode.", filesToProcess.Count, _processingMode);
+
+                        foreach (var file in filesToProcess)
+                        {
+                            if (_processingMode == "TrackLastModified")
+                            {
+                                _processedFiles[file] = File.GetLastWriteTimeUtc(file);
+                            }
+
                             _ = Task.Run(async () =>
-{
-    using var scope = _scopeFactory.CreateScope();
-    var fileProcessor = scope.ServiceProvider.GetRequiredService<IFileProcessorService>();
-    await fileProcessor.ProcessFileAsync(file);
-}, stoppingToken);
+                            {
+                                using var scope = _scopeFactory.CreateScope();
+                                var fileProcessor = scope.ServiceProvider.GetRequiredService<IFileProcessorService>();
+                                await fileProcessor.ProcessFileAsync(file);
+                            }, stoppingToken);
                         }
                     }
                 }

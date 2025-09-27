@@ -6,6 +6,7 @@ using FileParserService.Services.Interfaces;
 using MassTransit;
 
 using SharedContracts;
+
 namespace FileParserService.Services
 {
     public class FileProcessorService : IFileProcessorService
@@ -13,7 +14,7 @@ namespace FileParserService.Services
         private readonly ILogger<FileProcessorService> _logger;
         private readonly IPublishEndpoint _publishEndpoint;
         private readonly string _errorPath;
-        private readonly Random _random = new();
+        private readonly string _processingMode; private readonly Random _random = new();
         private readonly string[] _states = { "Online", "Run", "NotReady", "Offline" };
 
         public FileProcessorService(
@@ -24,8 +25,10 @@ namespace FileParserService.Services
             _logger = logger;
             _publishEndpoint = publishEndpoint;
 
+            _processingMode = configuration["FileWatcher:ProcessingMode"] ?? "DeleteAfterProcessing";
+
             _errorPath = configuration["FileWatcher:ErrorPath"]
-    ?? Path.Combine(configuration["FileWatcher:Path"]!, "_error");
+                ?? Path.Combine(configuration["FileWatcher:Path"]!, "_error");
 
             if (!Directory.Exists(_errorPath))
             {
@@ -35,6 +38,12 @@ namespace FileParserService.Services
 
         public async Task ProcessFileAsync(string filePath)
         {
+            if (!File.Exists(filePath))
+            {
+                _logger.LogWarning("File {FilePath} was removed before it could be processed.", filePath);
+                return;
+            }
+
             _logger.LogInformation("Processing file: {FilePath}", filePath);
             try
             {
@@ -46,6 +55,10 @@ namespace FileParserService.Services
                 if (instrumentStatus?.DeviceStatuses is null || !instrumentStatus.DeviceStatuses.Any())
                 {
                     _logger.LogWarning("File {FilePath} is empty or contains no devices.", filePath);
+                    if (_processingMode == "DeleteAfterProcessing")
+                    {
+                        MoveFileToErrorDirectory(filePath);
+                    }
                     return;
                 }
 
@@ -61,25 +74,38 @@ namespace FileParserService.Services
 
                 _logger.LogInformation("Successfully processed and published data for {Count} modules from file: {FilePath}", message.Modules.Count, filePath);
 
-                File.Delete(filePath);
+                if (_processingMode == "DeleteAfterProcessing")
+                {
+                    File.Delete(filePath);
+                    _logger.LogInformation("File {FileName} deleted after successful processing.", Path.GetFileName(filePath));
+                }
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An error occurred while processing file {FilePath}. Moving to error directory.", filePath);
-                try
+                _logger.LogError(ex, "An error occurred while processing file {FilePath}.", filePath);
+
+                if (_processingMode == "DeleteAfterProcessing")
                 {
-                    var destinationPath = Path.Combine(_errorPath, Path.GetFileName(filePath));
-                    if (File.Exists(destinationPath))
-                    {
-                        destinationPath = Path.Combine(_errorPath, $"{Path.GetFileNameWithoutExtension(filePath)}_{DateTime.Now:yyyyMMddHHmmss}{Path.GetExtension(filePath)}");
-                    }
-                    File.Move(filePath, destinationPath);
-                    _logger.LogInformation("File {FileName} moved to error directory.", Path.GetFileName(filePath));
+                    MoveFileToErrorDirectory(filePath);
                 }
-                catch (Exception moveEx)
+            }
+        }
+
+        private void MoveFileToErrorDirectory(string filePath)
+        {
+            try
+            {
+                var destinationPath = Path.Combine(_errorPath, Path.GetFileName(filePath));
+                if (File.Exists(destinationPath))
                 {
-                    _logger.LogError(moveEx, "Failed to move corrupted file {FileName} to error directory.", Path.GetFileName(filePath));
+                    destinationPath = Path.Combine(_errorPath, $"{Path.GetFileNameWithoutExtension(filePath)}_{DateTime.Now:yyyyMMddHHmmss}{Path.GetExtension(filePath)}");
                 }
+                File.Move(filePath, destinationPath);
+                _logger.LogInformation("File {FileName} moved to error directory.", Path.GetFileName(filePath));
+            }
+            catch (Exception moveEx)
+            {
+                _logger.LogError(moveEx, "Failed to move corrupted file {FileName} to error directory.", Path.GetFileName(filePath));
             }
         }
     }

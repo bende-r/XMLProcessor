@@ -1,5 +1,6 @@
 ﻿{
-  "$schema": "https:  "profiles": {
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
     "FileParserService": {
       "commandName": "Project",
       "dotnetRunMessages": true,
