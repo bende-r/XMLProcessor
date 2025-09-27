@@ -1,0 +1,77 @@
+## Игнорировать файлы сборки и бинарные файлы
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.config
+
+## Файлы резервных копий и временные файлы
+*.bak
+*.tmp
+*.temp
+*~
+
+## Файлы пользовательских настроек
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Файлы пакетов NuGet
+packages/
+[Nn]u[Gg]et/
+*.nupkg
+*.snupkg
+
+## Файлы тестовых результатов
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+## Файлы Visual Studio
+.vs/
+.vscode/
+*.swp
+*.swo
+
+## Файлы ReSharper
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## Файлы Azure
+*.pubxml
+*.publishproj
+
+## Файлы проектов MAUI
+*.apk
+*.aab
+*.ipa
+*.dSYM
+
+## Файлы Entity Framework
+Migrations/*.Designer.cs
+
+## Файлы покрытия кода
+coverage.xml
+*.coverage
+*.coveragexml
+
+## Файлы производительности
+*.diagsession
+*.perfmon
+
+## Файлы Docker
+.dockerignore
+
+## Файлы macOS
+.DS_Store
+
+## Файлы Rider
+.idea/
+
+## Сертификаты
+*.pfx
+*.cer
+*.crt
+*.key

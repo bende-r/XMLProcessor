@@ -1,0 +1,215 @@
+2025-09-26 15:01:26.688 +03:00 [INF] Bus started: "rabbitmq:2025-09-26 15:10:11.736 +03:00 [INF] Bus started: "rabbitmq:2025-09-26 15:16:43.581 +03:00 [INF] Configured endpoint ModuleStatusUpdate, Consumer: DataProcessorService.Consumers.ModuleStatusUpdateConsumer
+2025-09-26 15:16:44.077 +03:00 [INF] Bus started: "rabbitmq:2025-09-26 15:17:40.854 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:17:41.187 +03:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[@__newStatus_ModuleCategoryID_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."ModuleCategoryID", "m"."LastUpdate", "m"."ModuleState"
+FROM "ModuleStatuses" AS "m"
+WHERE "m"."ModuleCategoryID" = @__newStatus_ModuleCategoryID_0
+LIMIT 1
+2025-09-26 15:17:41.213 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'DataProcessorService.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ModuleStatuses'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ModuleStatuses'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-09-26 15:25:38.440 +03:00 [INF] Configured endpoint ModuleStatusUpdate, Consumer: DataProcessorService.Consumers.ModuleStatusUpdateConsumer
+2025-09-26 15:25:38.975 +03:00 [INF] Bus started: "rabbitmq:2025-09-26 15:25:39.051 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:25:39.314 +03:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[@__newStatus_ModuleCategoryID_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."ModuleCategoryID", "m"."LastUpdate", "m"."ModuleState"
+FROM "ModuleStatuses" AS "m"
+WHERE "m"."ModuleCategoryID" = @__newStatus_ModuleCategoryID_0
+LIMIT 1
+2025-09-26 15:25:39.340 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'DataProcessorService.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ModuleStatuses'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ModuleStatuses'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-09-26 15:26:32.971 +03:00 [INF] Configured endpoint ModuleStatusUpdate, Consumer: DataProcessorService.Consumers.ModuleStatusUpdateConsumer
+2025-09-26 15:26:33.383 +03:00 [INF] Bus started: "rabbitmq:2025-09-26 15:26:33.453 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:26:33.703 +03:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[@__newStatus_ModuleCategoryID_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."ModuleCategoryID", "m"."LastUpdate", "m"."ModuleState"
+FROM "ModuleStatuses" AS "m"
+WHERE "m"."ModuleCategoryID" = @__newStatus_ModuleCategoryID_0
+LIMIT 1
+2025-09-26 15:26:33.727 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'DataProcessorService.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ModuleStatuses'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ModuleStatuses'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-09-26 15:40:37.240 +03:00 [ERR] An error occurred while migrating the database.
+System.TypeLoadException: Method 'get_LockReleaseBehavior' in type 'Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository' from assembly 'Microsoft.EntityFrameworkCore.Sqlite, Version=8.0.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' does not have an implementation.
+   at Microsoft.Extensions.DependencyInjection.SqliteServiceCollectionExtensions.AddEntityFrameworkSqlite(IServiceCollection serviceCollection)
+   at Microsoft.EntityFrameworkCore.Sqlite.Infrastructure.Internal.SqliteOptionsExtension.ApplyServices(IServiceCollection services)
+   at Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.ApplyServices(IDbContextOptions options, ServiceCollection services)
+   at Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.<GetOrAdd>g__BuildServiceProvider|4_1(IDbContextOptions _, ValueTuple`2 arguments)
+   at Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.<>c.<GetOrAdd>b__4_0(IDbContextOptions contextOptions, ValueTuple`2 tuples)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, Boolean providerRequired)
+   at Microsoft.EntityFrameworkCore.DbContext..ctor(DbContextOptions options)
+   at DataProcessorService.Data.AppDbContext..ctor(DbContextOptions`1 options) in D:\Programming\XMLProcessor\DataProcessorServiceSln\DataProcessorService\Models\AppDbContext.cs:line 9
+   at InvokeStub_AppDbContext..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Program.<Main>$(String[] args) in D:\Programming\XMLProcessor\DataProcessorServiceSln\DataProcessorService\Program.cs:line 45
+2025-09-26 15:42:52.758 +03:00 [INF] Configured endpoint ModuleStatusUpdate, Consumer: DataProcessorService.Consumers.ModuleStatusUpdateConsumer
+2025-09-26 15:42:53.246 +03:00 [INF] Bus started: "rabbitmq:2025-09-26 15:42:53.333 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:42:53.596 +03:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[@__newStatus_ModuleCategoryID_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."ModuleCategoryID", "m"."LastUpdate", "m"."ModuleState"
+FROM "ModuleStatuses" AS "m"
+WHERE "m"."ModuleCategoryID" = @__newStatus_ModuleCategoryID_0
+LIMIT 1
+2025-09-26 15:42:53.622 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'DataProcessorService.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ModuleStatuses'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ModuleStatuses'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-09-26 15:50:09.747 +03:00 [INF] Configured endpoint ModuleStatusUpdate, Consumer: DataProcessorService.Consumers.ModuleStatusUpdateConsumer
+2025-09-26 15:50:10.275 +03:00 [INF] Bus started: "rabbitmq:2025-09-26 15:50:10.352 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:50:10.653 +03:00 [INF] Inserting new Module 'SAMPLER' with state 'Run'.
+2025-09-26 15:50:10.732 +03:00 [INF] Inserting new Module 'QUATPUMP' with state 'Online'.
+2025-09-26 15:50:10.739 +03:00 [INF] Inserting new Module 'COLCOMP' with state 'Offline'.
+2025-09-26 15:51:59.973 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:52:00.051 +03:00 [INF] Updating Module 'SAMPLER' with state 'Run'.
+2025-09-26 15:52:00.060 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Online'.
+2025-09-26 15:52:00.064 +03:00 [INF] Updating Module 'COLCOMP' with state 'Online'.
+2025-09-26 15:52:01.791 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:52:01.795 +03:00 [INF] Updating Module 'SAMPLER' with state 'Run'.
+2025-09-26 15:52:01.801 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Offline'.
+2025-09-26 15:52:01.808 +03:00 [INF] Updating Module 'COLCOMP' with state 'Online'.
+2025-09-26 15:52:19.900 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:52:19.903 +03:00 [INF] Updating Module 'SAMPLER' with state 'Online'.
+2025-09-26 15:52:19.908 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Offline'.
+2025-09-26 15:52:19.912 +03:00 [INF] Updating Module 'COLCOMP' with state 'NotReady'.
+2025-09-26 15:52:23.937 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:52:23.941 +03:00 [INF] Updating Module 'SAMPLER' with state 'Online'.
+2025-09-26 15:52:23.945 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Offline'.
+2025-09-26 15:52:23.949 +03:00 [INF] Updating Module 'COLCOMP' with state 'NotReady'.
+2025-09-26 15:52:25.950 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:52:25.953 +03:00 [INF] Updating Module 'SAMPLER' with state 'Run'.
+2025-09-26 15:52:25.958 +03:00 [INF] Updating Module 'QUATPUMP' with state 'NotReady'.
+2025-09-26 15:52:25.963 +03:00 [INF] Updating Module 'COLCOMP' with state 'Online'.
+2025-09-26 15:52:31.006 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:52:31.010 +03:00 [INF] Updating Module 'SAMPLER' with state 'Offline'.
+2025-09-26 15:52:31.016 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Online'.
+2025-09-26 15:52:31.022 +03:00 [INF] Updating Module 'COLCOMP' with state 'Run'.
+2025-09-26 15:52:39.060 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:52:39.063 +03:00 [INF] Updating Module 'SAMPLER' with state 'Run'.
+2025-09-26 15:52:39.071 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Online'.
+2025-09-26 15:52:39.076 +03:00 [INF] Updating Module 'COLCOMP' with state 'Run'.
+2025-09-26 15:52:42.100 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:52:42.103 +03:00 [INF] Updating Module 'SAMPLER' with state 'NotReady'.
+2025-09-26 15:52:42.108 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Run'.
+2025-09-26 15:52:42.112 +03:00 [INF] Updating Module 'COLCOMP' with state 'NotReady'.
+2025-09-26 15:52:45.142 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:52:45.144 +03:00 [INF] Updating Module 'SAMPLER' with state 'Offline'.
+2025-09-26 15:52:45.149 +03:00 [INF] Updating Module 'QUATPUMP' with state 'NotReady'.
+2025-09-26 15:52:45.153 +03:00 [INF] Updating Module 'COLCOMP' with state 'Offline'.
+2025-09-26 15:52:47.136 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:52:47.139 +03:00 [INF] Updating Module 'SAMPLER' with state 'NotReady'.
+2025-09-26 15:52:47.144 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Run'.
+2025-09-26 15:52:47.149 +03:00 [INF] Updating Module 'COLCOMP' with state 'NotReady'.
+2025-09-26 15:52:48.148 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:52:48.152 +03:00 [INF] Updating Module 'SAMPLER' with state 'Online'.
+2025-09-26 15:52:48.156 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Run'.
+2025-09-26 15:52:48.162 +03:00 [INF] Updating Module 'COLCOMP' with state 'Online'.
+2025-09-26 15:52:49.158 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:52:49.161 +03:00 [INF] Updating Module 'SAMPLER' with state 'NotReady'.
+2025-09-26 15:52:49.164 +03:00 [INF] Updating Module 'QUATPUMP' with state 'NotReady'.
+2025-09-26 15:52:49.168 +03:00 [INF] Updating Module 'COLCOMP' with state 'Run'.
+2025-09-26 15:52:50.165 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:52:50.167 +03:00 [INF] Updating Module 'SAMPLER' with state 'NotReady'.
+2025-09-26 15:52:50.171 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Offline'.
+2025-09-26 15:52:50.175 +03:00 [INF] Updating Module 'COLCOMP' with state 'Run'.
+2025-09-26 15:52:52.193 +03:00 [INF] Received 3 module updates.
+2025-09-26 15:52:52.195 +03:00 [INF] Updating Module 'SAMPLER' with state 'Run'.
+2025-09-26 15:52:52.199 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Offline'.
+2025-09-26 15:52:52.202 +03:00 [INF] Updating Module 'COLCOMP' with state 'Run'.

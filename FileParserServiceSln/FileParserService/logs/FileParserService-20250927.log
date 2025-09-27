@@ -1,0 +1,54 @@
+2025-09-27 19:01:28.941 +03:00 [INF] [Thread:] FileParserService started. Watching directory: D:\Programming\XMLProcessor
+2025-09-27 19:01:29.347 +03:00 [INF] [Thread:] Bus started: "rabbitmq://localhost/"
+2025-09-27 19:01:54.249 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:01:54.304 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\status.xml
+2025-09-27 19:01:54.654 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\status.xml
+2025-09-27 19:01:57.264 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:01:57.267 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\status.xml
+2025-09-27 19:01:57.299 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\status.xml
+2025-09-27 19:03:29.993 +03:00 [INF] [Thread:] FileParserService started. Watching directory: D:\Programming\XMLProcessor\input
+2025-09-27 19:03:30.097 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:03:30.177 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:03:30.434 +03:00 [INF] [Thread:] Bus started: "rabbitmq://localhost/"
+2025-09-27 19:03:30.648 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:03:56.345 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:03:56.349 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:03:56.445 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:03:59.390 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:03:59.398 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:03:59.408 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:01.413 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:04:01.415 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:01.425 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:03.427 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:04:03.430 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:03.440 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:05.444 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:04:05.446 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:05.457 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:06.455 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:04:06.457 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:06.468 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:07.466 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:04:07.468 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:07.477 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:08.472 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:04:08.474 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:08.483 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:09.479 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:04:09.481 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:09.490 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:10.484 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:04:10.488 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:04:10.501 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:47:29.020 +03:00 [INF] [Thread:] FileParserService started. Watching directory: D:\Programming\XMLProcessor\input
+2025-09-27 19:47:29.380 +03:00 [INF] [Thread:] Bus started: "rabbitmq://localhost/"
+2025-09-27 19:47:56.293 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:47:56.364 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:47:56.757 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:47:59.324 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:47:59.327 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:47:59.362 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:48:02.348 +03:00 [INF] [Thread:] Found 1 file(s) to process.
+2025-09-27 19:48:02.354 +03:00 [INF] [Thread:] Processing file: D:\Programming\XMLProcessor\input\status.xml
+2025-09-27 19:48:02.369 +03:00 [INF] [Thread:] Successfully processed and published data for 3 modules from file: D:\Programming\XMLProcessor\input\status.xml

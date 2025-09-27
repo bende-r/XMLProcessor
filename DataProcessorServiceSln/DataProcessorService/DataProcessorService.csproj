@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-DataProcessorService-8f325b68-16ad-497a-b6f5-f243052fc643</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup><PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.8" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="9.0.0" />
+	  
+		  <PackageReference Include="MassTransit.RabbitMQ" Version="8.2.3" />
+
+		  <!-- Явно указываем одинаковую версию для всех пакетов EF Core -->
+		  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+			  <PrivateAssets>all</PrivateAssets>
+			  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		  </PackageReference>
+		  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.6" />
+		  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.6">
+			  <PrivateAssets>all</PrivateAssets>
+			  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		  </PackageReference>
+
+		  <PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
+		  <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.1" />
+		  <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+		  <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+	  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\SharedContracts\SharedContracts.csproj" />
+  </ItemGroup>
+</Project>

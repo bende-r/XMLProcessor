@@ -1,0 +1,70 @@
+2025-09-27 19:01:12.682 +03:00 [INF] Configured endpoint ModuleStatusUpdate, Consumer: DataProcessorService.Consumers.ModuleStatusUpdateConsumer
+2025-09-27 19:01:13.404 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-09-27 19:01:54.759 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:01:55.123 +03:00 [INF] Inserting new Module 'SAMPLER' with state 'NotReady'.
+2025-09-27 19:01:55.202 +03:00 [INF] Inserting new Module 'QUATPUMP' with state 'Offline'.
+2025-09-27 19:01:55.210 +03:00 [INF] Inserting new Module 'COLCOMP' with state 'Offline'.
+2025-09-27 19:01:57.295 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:01:57.364 +03:00 [INF] Updating Module 'SAMPLER' with state 'Run'.
+2025-09-27 19:01:57.374 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Offline'.
+2025-09-27 19:01:57.379 +03:00 [INF] Updating Module 'COLCOMP' with state 'Offline'.
+2025-09-27 19:03:42.572 +03:00 [INF] Configured endpoint ModuleStatusUpdate, Consumer: DataProcessorService.Consumers.ModuleStatusUpdateConsumer
+2025-09-27 19:03:43.050 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-09-27 19:03:43.121 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:03:43.396 +03:00 [INF] Updating Module 'SAMPLER' with state 'Offline'.
+2025-09-27 19:03:43.465 +03:00 [INF] Updating Module 'QUATPUMP' with state 'NotReady'.
+2025-09-27 19:03:43.473 +03:00 [INF] Updating Module 'COLCOMP' with state 'Online'.
+2025-09-27 19:03:56.445 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:03:56.500 +03:00 [INF] Updating Module 'SAMPLER' with state 'Offline'.
+2025-09-27 19:03:56.506 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Online'.
+2025-09-27 19:03:56.511 +03:00 [INF] Updating Module 'COLCOMP' with state 'Offline'.
+2025-09-27 19:03:59.411 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:03:59.415 +03:00 [INF] Updating Module 'SAMPLER' with state 'Run'.
+2025-09-27 19:03:59.420 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Run'.
+2025-09-27 19:03:59.425 +03:00 [INF] Updating Module 'COLCOMP' with state 'Run'.
+2025-09-27 19:04:01.423 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:04:01.434 +03:00 [INF] Updating Module 'SAMPLER' with state 'Online'.
+2025-09-27 19:04:01.440 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Run'.
+2025-09-27 19:04:01.445 +03:00 [INF] Updating Module 'COLCOMP' with state 'Run'.
+2025-09-27 19:04:03.437 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:04:03.441 +03:00 [INF] Updating Module 'SAMPLER' with state 'Run'.
+2025-09-27 19:04:03.447 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Offline'.
+2025-09-27 19:04:03.451 +03:00 [INF] Updating Module 'COLCOMP' with state 'Run'.
+2025-09-27 19:04:05.454 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:04:05.458 +03:00 [INF] Updating Module 'SAMPLER' with state 'Run'.
+2025-09-27 19:04:05.462 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Run'.
+2025-09-27 19:04:05.466 +03:00 [INF] Updating Module 'COLCOMP' with state 'Run'.
+2025-09-27 19:04:06.465 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:04:06.468 +03:00 [INF] Updating Module 'SAMPLER' with state 'Offline'.
+2025-09-27 19:04:06.474 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Run'.
+2025-09-27 19:04:06.479 +03:00 [INF] Updating Module 'COLCOMP' with state 'NotReady'.
+2025-09-27 19:04:07.475 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:04:07.479 +03:00 [INF] Updating Module 'SAMPLER' with state 'Offline'.
+2025-09-27 19:04:07.483 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Offline'.
+2025-09-27 19:04:07.487 +03:00 [INF] Updating Module 'COLCOMP' with state 'NotReady'.
+2025-09-27 19:04:08.481 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:04:08.485 +03:00 [INF] Updating Module 'SAMPLER' with state 'Run'.
+2025-09-27 19:04:08.491 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Online'.
+2025-09-27 19:04:08.495 +03:00 [INF] Updating Module 'COLCOMP' with state 'Run'.
+2025-09-27 19:04:09.489 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:04:09.491 +03:00 [INF] Updating Module 'SAMPLER' with state 'Online'.
+2025-09-27 19:04:09.495 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Online'.
+2025-09-27 19:04:09.499 +03:00 [INF] Updating Module 'COLCOMP' with state 'Online'.
+2025-09-27 19:04:10.495 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:04:10.498 +03:00 [INF] Updating Module 'SAMPLER' with state 'NotReady'.
+2025-09-27 19:04:10.504 +03:00 [INF] Updating Module 'QUATPUMP' with state 'NotReady'.
+2025-09-27 19:04:10.508 +03:00 [INF] Updating Module 'COLCOMP' with state 'NotReady'.
+2025-09-27 19:47:14.096 +03:00 [INF] Configured endpoint ModuleStatusUpdate, Consumer: DataProcessorService.Consumers.ModuleStatusUpdateConsumer
+2025-09-27 19:47:14.710 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-09-27 19:47:56.895 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:47:57.313 +03:00 [INF] Updating Module 'SAMPLER' with state 'Offline'.
+2025-09-27 19:47:57.395 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Run'.
+2025-09-27 19:47:57.406 +03:00 [INF] Updating Module 'COLCOMP' with state 'NotReady'.
+2025-09-27 19:47:59.365 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:47:59.415 +03:00 [INF] Updating Module 'SAMPLER' with state 'NotReady'.
+2025-09-27 19:47:59.420 +03:00 [INF] Updating Module 'QUATPUMP' with state 'NotReady'.
+2025-09-27 19:47:59.424 +03:00 [INF] Updating Module 'COLCOMP' with state 'NotReady'.
+2025-09-27 19:48:02.368 +03:00 [INF] Received 3 module updates.
+2025-09-27 19:48:02.372 +03:00 [INF] Updating Module 'SAMPLER' with state 'Run'.
+2025-09-27 19:48:02.375 +03:00 [INF] Updating Module 'QUATPUMP' with state 'Run'.
+2025-09-27 19:48:02.379 +03:00 [INF] Updating Module 'COLCOMP' with state 'Run'.
